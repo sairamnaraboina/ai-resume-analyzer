@@ -10,4 +10,7 @@ Pillow
 nltk
 spacy
 pdfminer.six
+yt_dlp
+pdfplumber
+
 
