@@ -38,6 +38,17 @@ import yt_dlp
 import nltk
 import spacy
 import pdfplumber
+
+
+
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    from spacy.cli import download
+    download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
+
+
 nltk.download('stopwords')
 nltk.download('punkt')
 spacy.load("en_core_web_sm")
