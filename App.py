@@ -17,11 +17,13 @@ import base64,random
 import time,datetime
 #libraries to parse the resume pdf files
 from pyresparser import ResumeParser
-from pdfminer3.layout import LAParams, LTTextBox
-from pdfminer3.pdfpage import PDFPage
-from pdfminer3.pdfinterp import PDFResourceManager
-from pdfminer3.pdfinterp import PDFPageInterpreter
-from pdfminer3.converter import TextConverter
+from pdfminer.high_level import extract_text
+
+# from pdfminer3.layout import LAParams, LTTextBox
+# from pdfminer3.pdfpage import PDFPage
+# from pdfminer3.pdfinterp import PDFResourceManager
+# from pdfminer3.pdfinterp import PDFPageInterpreter
+# from pdfminer3.converter import TextConverter
 import io,random
 from streamlit_tags import st_tags
 from PIL import Image
