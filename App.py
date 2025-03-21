@@ -27,7 +27,7 @@ from streamlit_tags import st_tags
 from PIL import Image
 import pymysql
 from Courses import ds_course,web_course,android_course,ios_course,uiux_course,resume_videos,interview_videos
-import pafy #for uploading youtube videos
+import yt_dlp
 import plotly.express as px #to create visualisations at the admin session
 import yt_dlp
 
@@ -43,13 +43,12 @@ print("Dependencies loaded successfully!")
 
 
 def fetch_yt_video(link):
-    # video = pafy.new(link)
-    # return video.title
     ydl_opts = {}  # Add any options you need
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         result = ydl.extract_info(link, download=False)
         title = result.get('title', None)
         return title
+
 
 def get_table_download_link(df,filename,text):
     """Generates a link allowing the data in a given panda dataframe to be downloaded
