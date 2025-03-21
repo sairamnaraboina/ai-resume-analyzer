@@ -16,10 +16,17 @@ import pymysql
 from Courses import ds_course,web_course,android_course,ios_course,uiux_course,resume_videos,interview_videos
 import pafy #for uploading youtube videos
 import plotly.express as px #to create visualisations at the admin session
-import nltk
 import yt_dlp
 
+
+
+import nltk
+import spacy
+import pdfplumber
 nltk.download('stopwords')
+nltk.download('punkt')
+spacy.load("en_core_web_sm")
+print("Dependencies loaded successfully!")
 
 
 def fetch_yt_video(link):
