@@ -1,16 +1,14 @@
 import nltk
-import os
+import tempfile
 
-# Define a custom NLTK data path
-nltk_data_path = "/home/adminuser/nltk_data"
-os.makedirs(nltk_data_path, exist_ok=True)
-
-# Download required NLTK datasets
+# Use a temporary directory for NLTK downloads
+nltk_data_path = tempfile.gettempdir() + "/nltk_data"
 nltk.download('stopwords', download_dir=nltk_data_path)
 nltk.download('punkt', download_dir=nltk_data_path)
 nltk.data.path.append(nltk_data_path)
 
 from pyresparser import ResumeParser  # Now import pyresparser
+
 
 
 import streamlit as st
