@@ -1,30 +1,55 @@
-# AI Resume Analyzer
+# 🤖 AI Resume Analyzer
 
-## Overview
-Resume Analyzer is an AI-powered Application Tracking System (ATS) that screens resumes efficiently. It extracts key details, evaluates qualifications, and helps recruiters filter candidates. 🚀
+AI Resume Analyzer is a smart, end-to-end platform that analyzes resumes using AI and NLP techniques to provide meaningful insights and suggestions for improving resumes. It helps users boost their job readiness by offering tailored feedback, recommended skills, course suggestions, and bonus content.
 
-## Features
-- Upload and analyze resumes
-- Extract skills, experience, and education
-- Match resumes with job descriptions
-- Generate applicant scores
-- Search and filter resumes efficiently
+---
 
+## 🔍 Features
 
-## How to Run
-1. Clone the repo:
-   ```sh
-   git clone https://github.com/your-username/ai-resume-analyzer.git
-   ```
-2. Navigate to the project folder:
-   ```sh
-   cd ai-resume-analyzer
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Run the app:
-   ```sh
-   npm start
-   ```
+### 🧠 For Users:
+- **Skill Extraction**: Automatically identifies skills from uploaded resumes.
+- **Recommended Skills**: AI-based suggestions for additional skills to enhance the resume.
+- **Courses & Certificates**: Recommends relevant courses and certifications.
+- **Resume Tips & Ideas**: Personalized suggestions to improve resume quality.
+- **Resume Score**: Gives a score based on content, formatting, and relevance.
+- **Bonus Content**:
+  - 📹 **Resume Writing Tips (Video)**
+  - 🎙️ **Interview Tips (Video)**
+
+### 🛠️ Admin Panel:
+- View **all user details** and resume analytics.
+- **Pie Charts**:
+  - 🎯 Predicted Field Recommendation
+  - 🧪 User’s Experience Level Distribution
+
+---
+
+## 📸 Screenshots
+
+### 🔍 User Dashboard
+
+![User Dashboard](https://github.com/sairamnaraboina/ai-resume-analyzer/blob/main/Screenshots/1.png)
+
+---
+
+![User Dashboard](https://github.com/sairamnaraboina/ai-resume-analyzer/blob/main/Screenshots/2.png)
+
+---
+
+![User Dashboard](https://github.com/sairamnaraboina/ai-resume-analyzer/blob/main/Screenshots/3.png)
+
+---
+
+![User Dashboard](https://github.com/sairamnaraboina/ai-resume-analyzer/blob/main/Screenshots/4.png)
+
+---
+### 📈 Admin Panel 
+
+![Admin Panel](https://github.com/sairamnaraboina/ai-resume-analyzer/blob/main/Screenshots/5.png)
+
+---
+
+![Admin Panel](https://github.com/sairamnaraboina/ai-resume-analyzer/blob/main/Screenshots/6.png)
+
+---
+
