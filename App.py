@@ -2,6 +2,21 @@ import streamlit as st
 import pandas as pd
 import base64,random
 import time,datetime
+import os
+import nltk
+
+nltk_data_path = os.path.join(os.getcwd(), "nltk_data")
+os.makedirs(nltk_data_path, exist_ok=True)
+
+nltk.data.path.append(nltk_data_path)
+
+# Download required NLTK data only if not already present
+for resource in ['stopwords', 'punkt']:
+    try:
+        nltk.data.find(f'corpora/{resource}')
+    except LookupError:
+        nltk.download(resource, download_dir=nltk_data_path)
+
 #libraries to parse the resume pdf files
 from pyresparser import ResumeParser
 # from pdfminer3.layout import LAParams, LTTextBox
