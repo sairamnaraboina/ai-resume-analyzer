@@ -33,7 +33,7 @@ from streamlit_tags import st_tags
 from PIL import Image
 import pymysql
 from Courses import ds_course,web_course,android_course,ios_course,uiux_course,resume_videos,interview_videos
-import pafy #for uploading youtube videos
+# import pafy #for uploading youtube videos
 import plotly.express as px #to create visualisations at the admin session
 import nltk
 import yt_dlp
