@@ -7,3 +7,13 @@ plotly
 pymysql
 streamlit-tags
 Pillow
+nltk
+pyresparser
+spacy
+pdfminer.six
+pdfplumber
+pymysql
+streamlit-tags
+yt-dlp
+pillow
+plotly
